@@ -100,6 +100,13 @@ const Mutation = new GraphQLObjectType({
                 id: { type: GraphQLNonNull(GraphQLID) }
             },
             resolve(parent, args) {
+
+                Project.find({ clientID: args.id }).then((projects) => {
+                    projects.forEach((project) => {
+                      Project.deleteOne({_id :project.id});
+                    });
+                  });
+
                 return Client.findByIdAndDelete(args.id);
             }
         },

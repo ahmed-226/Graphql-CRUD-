@@ -9,7 +9,7 @@ const AddProjectModal=()=> {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [clientID, setClientId] = useState('');
-  const [status, setStatus] = useState('not started');
+  const [status, setStatus] = useState('new');
 
   const [addProject] = useMutation(ADD_PROJECT, {
     variables: { name, description, clientID, status },
