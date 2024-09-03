@@ -28,7 +28,10 @@ const AddClientModal = () => {
             return alert('Please fill in all fields');
         }
 
+        console.log('before');
+        
         addClient(name, email, phone);
+        console.log('after');
 
         setName('');
         setEmail('');
@@ -69,7 +72,7 @@ const AddClientModal = () => {
                             ></button>
                         </div>
                         <div className='modal-body'>
-                            <form onSubmit={onSubmit}>
+                            <form  onSubmit={onSubmit}>
                                 <div className='mb-3'>
                                     <label className='form-label'>Name</label>
                                     <input

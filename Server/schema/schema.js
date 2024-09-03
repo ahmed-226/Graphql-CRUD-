@@ -31,6 +31,7 @@ const ProjectType = new GraphQLObjectType({
         id: { type: GraphQLString },
         name: { type: GraphQLString },
         status: { type: GraphQLString },
+        description: { type: GraphQLString },
         client: {
             type: ClientType,
             resolve(parent, args) {
@@ -111,7 +112,7 @@ const Mutation = new GraphQLObjectType({
                         name: 'ProjectStatus',
                         values: {
                             new: { value: 'not started' },
-                            progress: { value: 'in progres' },
+                            progress: { value: 'in progress' },
                             completed: { value: 'completed' },
                         }
                     })
@@ -140,7 +141,7 @@ const Mutation = new GraphQLObjectType({
                         name: 'ProjectStatusUpdate',
                         values: {
                             new: { value: 'not started' },
-                            progress: { value: 'in progres' },
+                            progress: { value: 'in progress' },
                             completed: { value: 'completed' },
                         }
                     })

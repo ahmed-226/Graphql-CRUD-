@@ -5,7 +5,7 @@ const GET_PROJECTS=gql`
         projects{
             id
             name
-            # description
+            description
             status
             client{
                 id
@@ -20,7 +20,7 @@ const GET_PROJECT = gql`
     project(id: $id) {
       id
       name
-    #   descSription
+      description
       status
       client {
         id
