@@ -3,8 +3,8 @@
 This README file provides an example for a CRUD (Create, Read, Update, Delete) GraphQL project. 
 
 <div align="center">
-  <img src="assets/home.png" alt="Image 1" width="200" height="200"/>
-  <img src="assets/project.png" alt="Image 2" width="200" height="200"/>
+  <img src="assets/home.png" alt="Image 1" width="350" height="200"/>
+  <img src="assets/project.png" alt="Image 2" width="350" height="200"/>
 </div>
 
 ## Overview
